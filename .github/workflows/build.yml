@@ -20,6 +20,7 @@ jobs:
       - name: "😆 Generate Matrix"
         id: generate-matrix
         run: |
+          sudo apt-get install jq
           echo "repos<<EOF" >> $GITHUB_OUTPUT
           jq -s '[.[][]]' repos/repos*.json >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
