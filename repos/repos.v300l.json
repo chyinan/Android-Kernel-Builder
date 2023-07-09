@@ -10,18 +10,27 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/ibnudz/aarch64-linux-android-4.9",
-        "branch": "master",
-        "name": "aarch64-linux-android-4.9",
-        "binPath": ["bin","aarch64-linux-android-"]
+         "repo": "https://github.com/kdrag0n/proton-clang",
+         "branch": "master",
+         "name": "proton-clang",
+         "binPath": ["bin"]
       }
     ],
     "ccache": false,
     "params": {
       "ARCH": "arm64",
-      "CC":"aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc",
+      "CC": "proton-clang/bin/clang",
       "externalCommand": {
-        "CROSS_COMPILE": "/home/runner/work/Android-Kernel-Builder/Android-Kernel-Builder/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-",        
+        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
+        "LD": "proton-clang/bin/ld.lld",
+        "AR": "proton-clang/bin/llvm-ar",
+        "NM": "proton-clang/bin/llvm-nm",
+        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
+        "OBJDUMP": "proton-clang/bin/llvm-objdump",
+        "READELF": "proton-clang/bin/llvm-readelf",
+        "OBJSIZE": "proton-clang/bin/llvm-size",
+        "STRIP": "proton-clang/bin/llvm-strip"
       }
     },
     "AnyKernel3": {
