@@ -10,9 +10,9 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/+archive/6e0928fdce95f1666f9d07191a71cc5bb79414ef.tar.gz",
+        "repo": "https://releases.linaro.org/components/toolchain/binaries/latest-4/aarch64-elf/gcc-linaro-4.9.4-2017.01-x86_64_aarch64-elf.tar.xz",
         "name": "gcc",
-        "binPath": ["bin"]
+        "binPath": ["./bin"]
       }
     ],
     "ccache": true,
@@ -21,14 +21,14 @@
       "CC": "gcc",
       "externalCommand": {
         "CROSS_COMPILE": "aarch64-linux-android-",
-        "CONFIG_USB_HOST_NOTIFY"=y
+        "CONFIG_USB_HOST_NOTIFY"=y         
       }
     },
     "AnyKernel3": {
       "use": true,
       "release": true,
       "repo": "https://github.com/easterNday/AnyKernel3/",
-      "branch": "thyme"
+      "branch": "master"
     }
   }
 ]
