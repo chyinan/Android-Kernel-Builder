@@ -1,7 +1,7 @@
 [
   {
     "kernelSource": {
-      "name": "v300l_KernelSU",
+      "name": "kernel_lge_msm8998",
       "repo": "https://github.com/chyinan/kernel_lge_msm8998",
       "branch": "main",
       "device": "v300l",
@@ -11,16 +11,16 @@
     "toolchains": [
       {
         "repo": "https://releases.linaro.org/components/toolchain/binaries/latest-4/aarch64-elf/gcc-linaro-4.9.4-2017.01-x86_64_aarch64-elf.tar.xz",
-        "name": "gcc",
-        "binPath": ["./bin"]
+        "name": "aarch64-linux-android-4.9",
+        "binPath": ["bin","aarch64-linux-android-"]
       }
     ],
-    "ccache": true,
+    "ccache": false,
     "params": {
       "ARCH": "arm64",
-      "CC": "gcc",
+      "CC":"aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc"
       "externalCommand": {
-        "CROSS_COMPILE": "aarch64-linux-android-",        
+        "CROSS_COMPILE": "/home/runner/work/Android-Kernel-Builder/Android-Kernel-Builder/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-",        
       }
     },
     "AnyKernel3": {
