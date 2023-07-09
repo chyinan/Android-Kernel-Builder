@@ -20,8 +20,7 @@
       "ARCH": "arm64",
       "CC": "gcc",
       "externalCommand": {
-        "CROSS_COMPILE": "aarch64-linux-android-",
-        "CONFIG_USB_HOST_NOTIFY"="y"         
+        "CROSS_COMPILE": "aarch64-linux-android-",        
       }
     },
     "AnyKernel3": {
