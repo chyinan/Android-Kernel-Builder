@@ -19,7 +19,7 @@
     "ccache": false,
     "params": {
       "ARCH": "arm64",
-      "CC":"aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc"，
+      "CC":"aarch64-linux-android-4.9/bin/aarch64-linux-android-gcc",
       "externalCommand": {
         "CROSS_COMPILE": "/home/runner/work/Android-Kernel-Builder/Android-Kernel-Builder/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-",        
       }
