@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "kernel_lge_msm8998",
-      "repo": "https://github.com/SrDayne/lge_msm8998_h930ds",
-      "branch": "master",
+      "repo": "https://github.com/chyinan/kernel_lge_msm8998",
+      "branch": "main",
       "device": "v300l",
       "defconfig": "joan_lgu_kr-perf_defconfig"
     },
