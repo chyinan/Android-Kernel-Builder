@@ -1,4 +1,5 @@
-     {
+[
+      {
       "kernelSource": {
         "name": "Dragon-v300l-KernelSU",
         "repo": "https://github.com/chyinan/kernel_lge_msm8998",
@@ -53,3 +54,4 @@
         "repo": "https://github.com/sonrixmomo/AnyKernel3",
         "branch": "master"
       }
+]
