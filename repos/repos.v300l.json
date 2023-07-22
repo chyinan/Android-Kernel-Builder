@@ -1,11 +1,11 @@
 [
-      {
+    {
       "kernelSource": {
-        "name": "Dragon-v300l-KernelSU",
-        "repo": "https://github.com/chyinan/kernel_lge_msm8998",
+        "name": "Dragon-V500N-KernelSU",
+        "repo": "https://github.com/sonrixmomo/android_kernel_lge_sm8150",
         "branch": "main",
-        "device": "v300l",
-        "defconfig": "joan_lgu_kr-perf_defconfig"
+        "device": "V500N",
+        "defconfig": "vendor/dragon_flash_defconfig"
       },
       "withKernelSU": true,
       "toolchains": [
@@ -50,8 +50,9 @@
       },
       "AnyKernel3": {
         "use": true,
-        "release": true,
+        "release": false,
         "repo": "https://github.com/sonrixmomo/AnyKernel3",
         "branch": "master"
       }
-  ]
+    }
+  
