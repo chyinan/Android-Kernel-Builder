@@ -1,11 +1,11 @@
 [
     {
       "kernelSource": {
-        "name": "Dragon-V500N-KernelSU",
+        "name": "Dragon-v300l-KernelSU",
         "repo": "https://github.com/chyinan/kernel_lge_msm8998",
         "branch": "main",
         "device": "v300l",
-        "defconfig": "joan_kt_kr-perf_defconfig"
+        "defconfig": "joan_lgu_kr-perf_defconfig"
       },
       "withKernelSU": true,
       "toolchains": [
@@ -50,9 +50,10 @@
       },
       "AnyKernel3": {
         "use": true,
-        "release": false,
+        "release": true,
         "repo": "https://github.com/sonrixmomo/AnyKernel3",
         "branch": "master"
       }
     }
+  ]
   
