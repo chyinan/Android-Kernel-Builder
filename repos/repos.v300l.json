@@ -1,4 +1,3 @@
-[
     {
       "kernelSource": {
         "name": "Dragon-v300l-KernelSU",
@@ -10,16 +9,22 @@
       "withKernelSU": true,
       "toolchains": [
         {
-          "url": "https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.1/clang+llvm-13.0.1-aarch64-linux-gnu.tar.xz",
+          "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android12-release/clang-r416183b1.tar.gz",
           "name": "clang",
           "binPath": ["bin"]
         },
         {
-          "repo": "https://developer.arm.com/-/media/Files/downloads/gnu/12.2.mpacbti-rel1/binrel/arm-gnu-toolchain-12.2.mpacbti-rel1-aarch64-arm-none-eabi.tar.xz",
+          "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
+          "branch": "lineage-19.1",
           "name": "gcc64",
           "binPath": ["bin"]
         },
-          
+        {
+          "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
+          "branch": "lineage-19.1",
+          "name": "gcc",
+          "binPath": ["bin"] 
+        }
       ],
       "ccache": true,
       "params": {
@@ -48,6 +53,3 @@
         "repo": "https://github.com/sonrixmomo/AnyKernel3",
         "branch": "master"
       }
-    }
-  ]
-  
