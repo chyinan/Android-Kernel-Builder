@@ -1,43 +1,59 @@
 [
-  {
-    "kernelSource": {
-      "name": "kernel_lge_msm8998",
-      "repo": "https://github.com/jollaman999/jolla-kernel_joan",
-      "branch": "Oreo",
-      "device": "v300l",
-      "defconfig": "joan_lgu_kr-perf_defconfig"
-    },
-    "withKernelSU": true,
-    "toolchains": [
-      {
-         "repo": "https://github.com/kdrag0n/proton-clang",
-         "branch": "master",
-         "name": "proton-clang",
-         "binPath": ["bin"]
+    {
+      "kernelSource": {
+        "name": "Dragon-v300l-KernelSU",
+        "repo": "https://github.com/chyinan/kernel_lge_msm8998",
+        "branch": "main",
+        "device": "v300l",
+        "defconfig": "joan_lgu_kr-perf_defconfig"
+      },
+      "withKernelSU": true,
+      "toolchains": [
+        {
+          "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android12-release/clang-r416183b1.tar.gz",
+          "name": "clang",
+          "binPath": ["bin"]
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
+          "branch": "lineage-19.1",
+          "name": "gcc64",
+          "binPath": ["bin"]
+        },
+        {
+          "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
+          "branch": "lineage-19.1",
+          "name": "gcc",
+          "binPath": ["bin"] 
+        }
+      ],
+      "ccache": true,
+      "params": {
+        "ARCH": "arm64",
+        "CC": "clang/bin/clang",
+        "externalCommand": {
+          "CLANG_TRIPLE": "aarch64-linux-gnu-",
+          "CROSS_COMPILE": "gcc64/aarch64-linux-android-",
+          "CROSS_COMPILE_ARM32": "gcc/arm-linux-androideabi-",
+          "LD": "clang/bin/ld.lld",
+          "AR": "clang/bin/llvm-ar",
+          "NM": "clang/bin/llvm-nm",
+          "OBJCOPY": "clang/bin/llvm-objcopy",
+          "OBJDUMP": "clang/bin/llvm-objdump",
+          "READELF": "clang/bin/llvm-readelf",
+          "OBJSIZE": "clang/bin/llvm-size",
+          "STRIP": "clang/bin/llvm-strip",
+          "LDGOLD": "clang/bin/aarch64-linux-gnu-ld.gold",
+          "LLVM_AR": "clang/bin/llvm-ar",
+          "LLVM_DIS": "clang/bin/llvm-dis"
+        }
+      },
+      "AnyKernel3": {
+        "use": true,
+        "release": true,
+        "repo": "https://github.com/sonrixmomo/AnyKernel3",
+        "branch": "master"
       }
-    ],
-    "ccache": false,
-    "params": {
-      "ARCH": "arm64",
-      "CC": "proton-clang/bin/clang",
-      "externalCommand": {
-        "CROSS_COMPILE": "proton-clang/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-",
-        "LD": "proton-clang/bin/ld.lld",
-        "AR": "proton-clang/bin/llvm-ar",
-        "NM": "proton-clang/bin/llvm-nm",
-        "OBJCOPY": "proton-clang/bin/llvm-objcopy",
-        "OBJDUMP": "proton-clang/bin/llvm-objdump",
-        "READELF": "proton-clang/bin/llvm-readelf",
-        "OBJSIZE": "proton-clang/bin/llvm-size",
-        "STRIP": "proton-clang/bin/llvm-strip"
-      }
-    },
-    "AnyKernel3": {
-      "use": true,
-      "release": true,
-      "repo": "https://github.com/easterNday/AnyKernel3/",
-      "branch": "master"
     }
-  }
-]
+  ]
+  
