@@ -15,17 +15,11 @@
           "binPath": ["bin"]
         },
         {
-          "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
-          "branch": "lineage-17.0",
+          "repo": "https://developer.arm.com/-/media/Files/downloads/gnu/12.2.mpacbti-rel1/binrel/arm-gnu-toolchain-12.2.mpacbti-rel1-aarch64-arm-none-eabi.tar.xz",
           "name": "gcc64",
           "binPath": ["bin"]
         },
-        {
-          "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
-          "branch": "lineage-17.0",
-          "name": "gcc",
-          "binPath": ["bin"] 
-        }
+          
       ],
       "ccache": true,
       "params": {
