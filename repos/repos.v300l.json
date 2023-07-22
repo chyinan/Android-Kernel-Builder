@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "kernel_lge_msm8998",
-      "repo": "https://github.com/chyinan/kernel_lge_msm8998",
-      "branch": "main",
+      "repo": "https://github.com/jollaman999/jolla-kernel_joan",
+      "branch": "Oreo",
       "device": "v300l",
       "defconfig": "joan_lgu_kr-perf_defconfig"
     },
