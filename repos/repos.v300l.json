@@ -7,7 +7,7 @@
         "device": "v300l",
         "defconfig": "joan_lgu_kr-perf_defconfig"
       },
-      "withKernelSU": true,
+      "withKernelSU": false,
       "toolchains": [
         {
           "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/android12-release/clang-r416183b1.tar.gz",
