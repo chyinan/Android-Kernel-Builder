@@ -2,8 +2,8 @@
     {
       "kernelSource": {
         "name": "Dragon-v300l-KernelSU",
-        "repo": "https://github.com/chyinan/kernel_lge_msm8998",
-        "branch": "main",
+        "repo": "https://github.com/chyinan/lge_msm8998_h930ds",
+        "branch": "master",
         "device": "v300l",
         "defconfig": "joan_lgu_kr-perf_defconfig"
       },
